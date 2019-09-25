@@ -1,8 +1,13 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <stdlib.h> /* For dynamic memory*/
+#include <stdio.h> /* Macros */
+#include <sys/types.h> /*System calls */
+#include <sys/stat.h>
+#include <fcntl.h> /* POSIX */
+#include <string.h>
+#include <limits.h> /*Limits for the macros */
 
 
 /**
@@ -33,7 +38,7 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+void error_cases(int error_type, ...);
 
 
 #endif /* MONTY_H */
