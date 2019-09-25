@@ -32,7 +32,7 @@ void error_cases(int error_type, ...)
 			break; /* Stack too short for operations*/
 
 	}
-	/* falta free nodes*/
+	free_stack();
 	exit(EXIT_FAILURE);
 }
 
