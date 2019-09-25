@@ -28,8 +28,14 @@ void error_cases(int error_type, ...)
 		case '4':
 			l_number = va_arg(list_arguments, unsigned int);
 			op_code = va_arg(list_arguments, char *)
-			printf("L%d: can't swap, stack too short\n", l_number, op_code);
-			break;
+			printf("L%d: can't %s stack too short\n", l_number, op_code);
+			break; /* Stack too short for operations*/
+
+	}
+	/* falta free nodes*/
+	exit(EXIT_FAILURE);
+}
+
 
 
 
