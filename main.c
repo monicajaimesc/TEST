@@ -1,15 +1,26 @@
 #include "monty.h"
 
 int main (int argc, char **argv)
+{
+	size_t number; /*integer type*/
+	/* Execute: Needed for the stack flow */
+	void (*execute)(stack_t **stack, unsigned int line_number);
+/* different of 2 because to be able to execute the program */
+	if (argc != 2)
+/*Errors-cases function */
+    	error_cases(1);
+/* Building stack structure */
+	open_file(argv[1]);
+	
+	bilding_stack_flow();
 
-size_t n;
-void (*f)(stack_t **stack, unsigned int line_number);
 
-if (argc != 2)
-    error_cases;
-open_file;
+	open_file(argv[1]);
+	free_nodes();
+	return (0);
+}
 
-/* Built the global structure */
+
 
 /*CUANDO NO SEA UN ENTERO */
 /*CUANDO SEA VACIO*/
