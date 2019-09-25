@@ -8,7 +8,7 @@
 #include <fcntl.h> /* POSIX */
 #include <string.h>
 #include <limits.h> /*Limits for the macros */
-
+#include <stdarg.h> /*allows to accept and indefinite # of arguments*/
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)

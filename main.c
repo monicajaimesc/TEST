@@ -11,12 +11,12 @@ int main (int argc, char **argv)
     	error_cases(1);
 /* Building stack structure */
 	open_file(argv[1]);
-	
+
 	bilding_stack_flow();
 
 
 	open_file(argv[1]);
-	free_nodes();
+	free_stack();
 	return (0);
 }
 
