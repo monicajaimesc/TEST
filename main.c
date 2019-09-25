@@ -20,11 +20,6 @@ int main (int argc, char **argv)
 	return (0);
 }
 
-
-
-/*CUANDO NO SEA UN ENTERO */
-/*CUANDO SEA VACIO*/
-
 fflush(stdin);
 /*2. handle command lines with arguments*/
 	/*reads an entire line from stream, store it in bufsize and thext is stdin*/
